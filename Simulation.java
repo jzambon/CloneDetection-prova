@@ -243,6 +243,7 @@ public class Simulation {
 		//creation of the Hypervisor
 		Hypervisor hyp= new Hypervisor(host_rmi,proto,g,n,e,e_send,e_receive,e_sign,p,r);
 		for(int i=0; i<nsim; i++){
+			System.out.println(i);
 			hyp.init_usa(); //initialization of the unite-square area
 			//Attacco clone!
 		}

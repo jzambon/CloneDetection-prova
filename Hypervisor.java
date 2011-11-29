@@ -22,7 +22,9 @@ public class Hypervisor {
 	public void init_usa() {
 		int cont_id;
 		for(cont_id=0;cont_id<n; cont_id++){	//cont_id is for the ID of a node (from 0 to n-1)
-			Node node= new Node(cont_id, r,p,g,e,e_send,e_rec,e_sign);
+			Double x= Math.random();
+			Double y= Math.random();
+			Node node= new Node(cont_id,x,y, r,p,g,e,e_send,e_rec,e_sign);
 			//posizionare nodo nella rete 1x1 (Math.random)
 		}
 		
